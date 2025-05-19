@@ -12,6 +12,12 @@ class Customer:
     def coffees(self):
         return list({order.coffee for order in self.orders()})
     
+    def create_order(self, coffee, price):
+        return Order(self, coffee, price)
+    
+    def __repr__(self):
+        return f"{self.name}"
+    
     
     @property
     def name(self):
@@ -19,8 +25,9 @@ class Customer:
 
     @name.setter
     def name(self, value):
-        if not isinstance(value, str) or (1 <= len(value) <= 15):
-            raise TypeError("Must be a string with 1–15 characters")
+        if not isinstance(value, str) or not (1 <= len(value) <= 15):
+            self._name = None
+            raise TypeError("Customer Name Must be a string with 1–15 characters")
         self._name = value
 
     

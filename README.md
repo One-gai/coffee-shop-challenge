@@ -1,7 +1,5 @@
 # coffee-shop-challenge
 
-# ☕ Coffee Orders – Python OOP Lab
-
 A simple object-oriented program modeling customers, coffees, and orders at a coffee shop. Built to practice object relationships, encapsulation, and basic data handling in Python.
 
 ---
@@ -13,7 +11,7 @@ project/
 ├── customer.py # Defines the Customer class
 ├── coffee.py # Defines the Coffee class
 ├── order.py # Defines the Order class
-└── main.py # (Optional) Used for testing and running the app
+└── centre.py # (Optional) Used for testing and running the app
 
 markdown
 Copy
@@ -46,9 +44,9 @@ Edit
 ## 🛠️ How to Use
 
 1. Clone the repo or download the files.
-2. Run the program using a `main.py` or in a Python shell:
+2. Run the program using a `center.py` or in a Python shell:
    ```bash
-   python main.py
+   python center.py
 You can create instances and test like this:
 
 python
@@ -90,7 +88,6 @@ vbnet
 Copy
 Edit
 
-Let me know if you'd like help writing a `main.py` for quick testing or want this saved as a downloadable file.
 
 
 
